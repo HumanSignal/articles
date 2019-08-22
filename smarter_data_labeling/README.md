@@ -184,7 +184,7 @@ We take the 1280-dimensional output of MobileNet-v2 neural network as
 embeddings for our feature space and adopt cosine distance for metric
 space. Here are some insights on how the embedded dataset looks like
 
-![./imgs/clusters.png](Clusters)
+![./smarter_data_labeling/imgs/clusters.png](Clusters)
 
 You can see that there are some cloud clusters so that we can benefit
 here by using additional informativeness measures besides uncertainty.
