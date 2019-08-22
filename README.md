@@ -4,4 +4,4 @@ This repository contains all the materials and source code we publish in our are
 
 # Articles
 
-- (Learn faster with smarter data labeling)[/smarter_data_labeling/README.md]
+- [Learn faster with smarter data labeling](/smarter_data_labeling/README.md)
