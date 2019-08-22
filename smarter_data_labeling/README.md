@@ -151,7 +151,7 @@ Despite its simplicity, it is a very powerful method since:
 
 Here is a visualisation how it looks in practice:
 
-
+![./imgs/clusters.png](Clusters)
 
 There are 2 classes, purples (p), and oranges (o). At each step, our
 selection method tries to do the best to get the most informative
@@ -159,7 +159,7 @@ example and label it. As you can see, the model always tries to pick
 the next sample in between 1st and 2nd class points, mainly because
 maximizing uncertainty measure u(x) leads to minimizing
 
- (||x-xo||-||x-xp||)
+\|x - x_o\| - \|x - x_p\| \rightarrow \min
 
 That leads to border exploration (around X=0) during ~30 first
 steps. Then our active selection methods try to dive into a dense
@@ -184,12 +184,12 @@ We take the 1280-dimensional output of MobileNet-v2 neural network as
 embeddings for our feature space and adopt cosine distance for metric
 space. Here are some insights on how the embedded dataset looks like
 
-![]()
+![./imgs/clusters.png](Clusters)
 
 You can see that there are some cloud clusters so that we can benefit
 here by using additional informativeness measures besides uncertainty.
 
-![https://plot.ly/~niklub/1.embed](Random vs Active Selection)
+![./imgs/random_vs_active_1.png](Random vs Active Selection)
 
 The averaged model performance against the number of labeled examples
 is depicted here. As we can see, active sampling strategy needs almost
@@ -204,7 +204,7 @@ fresh/rotten fruit images above. As a feature extractor, Universal
 Sentence Encoder is taken that produces 512-dimensional embeddings for
 each tweet.
 
-![https://plot.ly/~niklub/3.embed](Random vs Active Selection)
+![./imgs/random_vs_active_2.png](Random vs Active Selection)
 
 Similarly, here is how the model performs over labeling steps
 comparing active & random selection strategies. Again, active
