@@ -151,7 +151,7 @@ Despite its simplicity, it is a very powerful method since:
 
 Here is a visualisation how it looks in practice:
 
-![Clusters](./imgs/clusters.png)
+[![Visualization](https://img.youtube.com/vi/wt72LgY76gc/0.jpg)](https://www.youtube.com/watch?v=wt72LgY76gc)
 
 There are 2 classes, purples (p), and oranges (o). At each step, our
 selection method tries to do the best to get the most informative
